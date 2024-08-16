@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Áfakulcs frissítése</h2>
+  <form (ngSubmit)="updateAfakulcs()">
+    <div class="form-group">
+      <label for="nev">Név</label>
+      <input type="text" id="nev" [(ngModel)]="afakulcs.nev" name="nev" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="afakulcs">Áfakulcs</label>
+      <input type="number" id="afakulcs" [(ngModel)]="afakulcs.afakulcs" name="afakulcs" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Frissítés</button>
+  </form>
+</div>

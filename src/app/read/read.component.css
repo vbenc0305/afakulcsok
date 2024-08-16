@@ -1,0 +1,68 @@
+/* Oldal háttere */
+.help {
+  background-color: #FDF5DF; /* Világoskék háttér */
+  display: flex;
+  align-items: center; /* Vertikális középre igazítás */
+  min-height: 100vh; /* Teljes magasságú konténer */
+  margin-top:50px;
+  width: 100%; /* Teljes szélességű konténer */
+  z-index: 800/* Beállítja, hogy a padding és border is része legyen a szélességnek és magasságnak */
+}
+
+/* Konténer stílus */
+.container {
+  max-width: 800px;
+  width: 100%; /* A konténer szélessége alkalmazkodik a rendelkezésre álló helyhez */
+  margin: auto;
+  padding: 20px;
+  background-color: #5EBEC4; /* Fehér háttér a konténernek */
+  border-radius: 8px; /* Lekerekített sarkok */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Halvány árnyék */
+}
+
+/* Fejléc stílus */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Középre igazított cím */
+}
+
+/* Táblázat stílus */
+table {
+  width: 100%; /* Teljes szélesség */
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fefefe; /* Fehér háttér a táblázatnak */
+  border-radius: 8px; /* Lekerekített sarkok */
+  overflow: hidden; /* Biztosítja, hogy a lekerekített sarkok jól nézzenek ki */
+  table-layout: fixed; /* Rögzített táblázat elrendezés */
+}
+
+/* Táblázat cellák stílusa */
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Táblázat fejlécek stílusa */
+table th {
+  background-color: #b3e5fc; /* Világoskék háttér a táblázat fejléceinek */
+  font-weight: bold;
+}
+
+/* Táblázat cellák stílusa */
+table td {
+  font-size: 14px;
+}
+
+/* Páros sorok stílusa */
+tr:nth-child(even) {
+  background-color: #e1f5fe; /* Világoskék háttér a páros soroknak */
+}
+
+/* Sorok kiemelése hover hatással */
+tr:hover {
+  background-color: #b3e5fc; /* Sötétebb kék háttér, amikor az egér fölé megy */
+}
